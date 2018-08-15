@@ -5,6 +5,10 @@ class Cake :
 {
 public:
 	Cake();
+	Cake(string cakeFlavor, string frostingType);
 	~Cake();
+protected:
+	string cakeFlavor;
+	string frostingType;
 };
 

@@ -2,11 +2,14 @@
 #include "Cake.h"
 
 
-Cake::Cake()
-{
+Cake::Cake() {
 }
 
+Cake::Cake(string cakeFlavor, string frostingType) {
 
-Cake::~Cake()
-{
+	this->cakeFlavor = cakeFlavor;
+	this->frostingType = frostingType;
+}
+
+Cake::~Cake() {
 }
