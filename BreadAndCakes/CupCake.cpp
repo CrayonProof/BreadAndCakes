@@ -1,10 +1,14 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "CupCake.h"
 
 double ccPRICE = 1.95;
 double ccCREAM_CHEESE_PRICE = 0.20;
 
-CupCake::CupCake() {
+CupCake::CupCake() : Cake() {
+
+	sprinkleColor = "none";
+
+	price = ccPRICE;
 }
 
 CupCake::CupCake(string cakeFlavor, string frostingType, string sprinkleColor)

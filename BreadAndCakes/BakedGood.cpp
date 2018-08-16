@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "BakedGood.h"
 #include <iomanip>
 #include <sstream>
@@ -33,7 +33,8 @@ string BakedGood::GetType() {
 
 	return "none";
 }
+
 double BakedGood::GetPrice() {
 
-	return (double) INT_MIN;
+	return 0.00;
 }

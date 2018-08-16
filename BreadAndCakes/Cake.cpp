@@ -1,8 +1,11 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "Cake.h"
 
 
 Cake::Cake() {
+
+	cakeFlavor = "none";
+	frostingType = "none";
 }
 
 Cake::Cake(string cakeFlavor, string frostingType) {

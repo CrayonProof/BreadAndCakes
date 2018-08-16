@@ -1,12 +1,15 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "Bread.h"
-#include <string>
 using namespace std;
 
 string breadVariety;
 double BREAD_PRICE = 4.50;
 
 Bread::Bread() {
+
+	breadVariety = "none";
+
+	price = BREAD_PRICE;
 }
 
 Bread::Bread(string breadVariety) {

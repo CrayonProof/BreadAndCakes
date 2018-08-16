@@ -1,6 +1,6 @@
 #pragma once
 #include "Cake.h"
-#include <String>
+#include <string>
 using namespace std;
 
 class LayerCake :

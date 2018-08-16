@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "LayerCake.h"
 #include <sstream>
 
@@ -6,7 +6,10 @@ double lcPRICE = 9.00;
 double lcLAYER_PRICE = 3.00;
 double lcCREAM_CHEESE_PRICE = 1.00;
 
-LayerCake::LayerCake() {
+LayerCake::LayerCake() : Cake() {
+
+	layerCount = 1;
+	price = lcPRICE + (lcLAYER_PRICE * ((double)(layerCount - 1)));
 }
 
 LayerCake::LayerCake(string cakeFlavor, string frostingType, int layerCount)
