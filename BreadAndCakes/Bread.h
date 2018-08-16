@@ -11,7 +11,7 @@ public:
 	Bread(string breadVariety);
 	~Bread();
 	string ToString();
-	virtual string GetType();
+	string GetType();
 	double GetPrice();
 private:
 	string breadVariety;

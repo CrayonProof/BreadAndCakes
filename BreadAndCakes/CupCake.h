@@ -10,12 +10,14 @@ public:
 	CupCake();
 	CupCake(string cakeFlavor, string frostingType, string sprinkleColor);
 	~CupCake();
-	virtual string ToString();
-	virtual string GetType();
+	string ToString();
+	string GetType();
 	double GetPrice();
+	//Declared in CupCake to keep CupCake from being abstract
+	void CakeIsAbstract();
 private:
 	string sprinkleColor;
-	double ccPRICE = 1.95;
-	double ccCREAM_CHEESE_PRICE = 0.20;
+	double CCPRICE = 1.95;
+	double CCCREAM_CHEESE_PRICE = 0.20;
 };
 

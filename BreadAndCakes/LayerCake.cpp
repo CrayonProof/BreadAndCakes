@@ -2,14 +2,14 @@
 #include "LayerCake.h"
 #include <sstream>
 
-double lcPRICE = 9.00;
-double lcLAYER_PRICE = 3.00;
-double lcCREAM_CHEESE_PRICE = 1.00;
+double LCPRICE = 9.00;
+double LCLAYER_PRICE = 3.00;
+double LCCREAM_CHEESE_PRICE = 1.00;
 
 LayerCake::LayerCake() : Cake() {
 
 	layerCount = 1;
-	price = lcPRICE + (lcLAYER_PRICE * ((double)(layerCount - 1)));
+	price = LCPRICE + (LCLAYER_PRICE * ((double)(layerCount - 1)));
 }
 
 LayerCake::LayerCake(string cakeFlavor, string frostingType, int layerCount)
@@ -17,9 +17,9 @@ LayerCake::LayerCake(string cakeFlavor, string frostingType, int layerCount)
 
 	this->layerCount = layerCount;
 
-	price = lcPRICE + (lcLAYER_PRICE * ((double) (layerCount - 1)));
+	price = LCPRICE + (LCLAYER_PRICE * ((double) (layerCount - 1)));
 	if (frostingType == "cream-cheese") {
-		price +=(lcCREAM_CHEESE_PRICE * ((double) layerCount));
+		price +=(LCCREAM_CHEESE_PRICE * ((double) layerCount));
 	}
 }
 
@@ -42,3 +42,6 @@ double LayerCake::GetPrice() {
 
 	return price;
 }
+
+//Declared in LayerCake to keep LayerCake from being abstract
+void LayerCake::CakeIsAbstract() {}

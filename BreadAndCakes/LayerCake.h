@@ -10,13 +10,15 @@ public:
 	LayerCake();
 	LayerCake(string cakeFlavor, string frostingType, int layerCount);
 	~LayerCake();
-	virtual string ToString();
-	virtual string GetType();
+	string ToString();
+	string GetType();
 	double GetPrice();
+	//Declared in LayerCake to keep LayerCake from being abstract
+	void CakeIsAbstract();
 private:
 	int layerCount;
-	double lcPRICE = 9.00;
-	double lcLAYER_PRICE = 3.00;
-	double lcCREAM_CHEESE_PRICE = 1.00;
+	double LCPRICE = 9.00;
+	double LCLAYER_PRICE = 3.00;
+	double LCREAM_CHEESE_PRICE = 1.00;
 };
 

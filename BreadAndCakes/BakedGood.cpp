@@ -19,22 +19,3 @@ string BakedGood::ToString() {
 
 	return "$" + toString.str();
 }
-
-bool BakedGood::Equals(BakedGood otherObject) {
-
-	if ((this->ToString()) == (otherObject.ToString())) {
-		return true;
-	}
-
-	return false;
-}
-
-string BakedGood::GetType() {
-
-	return "none";
-}
-
-double BakedGood::GetPrice() {
-
-	return 0.00;
-}

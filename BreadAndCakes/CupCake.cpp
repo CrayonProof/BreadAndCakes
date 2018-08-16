@@ -1,14 +1,14 @@
 //#include "stdafx.h"
 #include "CupCake.h"
 
-double ccPRICE = 1.95;
-double ccCREAM_CHEESE_PRICE = 0.20;
+double CCPRICE = 1.95;
+double CCREAM_CHEESE_PRICE = 0.20;
 
 CupCake::CupCake() : Cake() {
 
 	sprinkleColor = "none";
 
-	price = ccPRICE;
+	price = CCPRICE;
 }
 
 CupCake::CupCake(string cakeFlavor, string frostingType, string sprinkleColor)
@@ -16,9 +16,9 @@ CupCake::CupCake(string cakeFlavor, string frostingType, string sprinkleColor)
 
 	this->sprinkleColor = sprinkleColor;
 
-	price = ccPRICE;
+	price = CCPRICE;
 	if (frostingType == "cream-cheese") {
-		price += ccCREAM_CHEESE_PRICE;
+		price += CCCREAM_CHEESE_PRICE;
 	}
 }
 
@@ -38,3 +38,6 @@ double CupCake::GetPrice() {
 
 	return price;
 }
+
+//Declared in CupCake to keep CupCake from being abstract
+void CupCake::CakeIsAbstract() {}
