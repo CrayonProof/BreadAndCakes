@@ -9,6 +9,9 @@ public:
 	BakedGood();
 	~BakedGood();
 	virtual string ToString();
+	bool Equals(BakedGood otherObject);
+	virtual string GetType();
+	virtual double GetPrice();
 protected:
 	double price;
 };

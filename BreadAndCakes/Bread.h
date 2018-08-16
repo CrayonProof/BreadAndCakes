@@ -11,7 +11,10 @@ public:
 	Bread(string breadVariety);
 	~Bread();
 	string ToString();
+	virtual string GetType();
+	double GetPrice();
 private:
 	string breadVariety;
+	double BREAD_PRICE = 4.50;
 };
 
